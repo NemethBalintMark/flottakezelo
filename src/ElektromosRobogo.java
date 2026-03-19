@@ -11,6 +11,11 @@ public class ElektromosRobogo extends Jarmu{
     }
 
     @Override
+    public double fenntartasiKoltseg(int ut) {
+        return (((double) ut / 100) * getAtlagfogyasztas() * 50);
+    }
+
+    @Override
     public String toString() {
         return "Elektromos Robogó{" +
                 "azonosito='" + getAzonosito() + '\'' +
